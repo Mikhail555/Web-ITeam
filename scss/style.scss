@@ -1,7 +1,5 @@
-@import "vars";
 @import "_libs";
 @import "fonts";
-@import "media";
 @import "_mixins";
 
 $black: #000000;  
@@ -128,8 +126,9 @@ header{
     a{
       font-size: 25px;
       color: white;
-      border-radius: 40px;
+      border-radius: 25px;
       background-color: #4C52ED;
+      text-align: center;
     }
 }
 .single-item{
@@ -212,6 +211,9 @@ header{
   justify-content: center;
   border-radius: 46px;
   font-size: 36px;
+  p{
+    text-align: center;
+  }
 }
 .btn_req{
   @include btn(160px, 60px, auto);
@@ -597,18 +599,7 @@ input:focus, textarea:focus {
   visibility: visible;
   opacity: 1;
 }
-/* планшет */
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  .modal {
-     width: 95%;
-  }
-}
-/* мобильный */
-@media only screen and (min-width: 459px) and (max-width: 767px) {
-  .modal {
-     width:85%;  
-  }
-}
+
 /////popup - End
 
   /* ====================================
@@ -966,3 +957,13 @@ input:focus, textarea:focus {
   }
 
   //// burger-end
+
+
+
+
+
+
+
+
+
+
